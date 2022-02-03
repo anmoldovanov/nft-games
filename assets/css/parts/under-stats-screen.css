@@ -1,0 +1,24 @@
+.under-stats-screen {
+   margin-top: 50vh;
+   .container {
+      height: 100vh;
+      position: relative;
+   }
+   &__pig {
+      width: 87.8rem;
+      height: 43.9rem;
+      position: absolute;
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 100%);
+      z-index: 3;
+      img {
+         height: 100%;
+         width: 100%;
+         object-fit: contain;
+         object-position: center;
+      }
+      /* background-image: url(../img/under-stats-pig.png); */
+   }
+}

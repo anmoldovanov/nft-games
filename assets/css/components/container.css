@@ -1,6 +1,5 @@
 :root {
-   --container-base-width: 111rem;
-   --container-width: calc(var(--container-base-width) + var(--container-padding) * 2);
+   --container-width: 144rem;
    --container-padding: 2rem;
    @screen md {
       --container-padding: 2.5rem;

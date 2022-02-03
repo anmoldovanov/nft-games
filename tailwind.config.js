@@ -33,7 +33,7 @@ module.exports = {
       colors: {
          black: {
             dark: "#000",
-            DEFAULT: "#161514",
+            DEFAULT: "#0C1016",
          },
          divider: {
             DEFAULT: "#BABABA",
@@ -67,6 +67,8 @@ module.exports = {
 
       fontFamily: {
          primary: '"Proxima Nova", sans-serif',
+         secondary: '"Mohave", sans-serif',
+         therd: '"Mohave Italic", sans-serif',
       },
 
       // boxShadow: {

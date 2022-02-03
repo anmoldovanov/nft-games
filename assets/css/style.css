@@ -42,5 +42,8 @@
 @import "./parts/header.css";
 @import "./parts/footer.css";
 @import "./parts/feedback.css";
+@import "./parts/main-screen.css";
+@import "./parts/stats-screen.css";
+@import "./parts/under-stats-screen.css";
 
 @import "tailwindcss/utilities";

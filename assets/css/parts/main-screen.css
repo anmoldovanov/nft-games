@@ -1,0 +1,137 @@
+.main-wrapper-inner {
+   overflow: hidden;
+}
+.main-screen {
+   position: relative;
+   z-index: 3;
+   .container {
+      height: 100vh;
+      position: relative;
+   }
+   &__ills {
+      position: absolute;
+      top: 62%;
+      left: 50%;
+      width: 129.3rem;
+      height: 99.6rem;
+      transform: translate(-50%, -50%);
+   }
+   &__bg {
+      position: fixed;
+      top: -60%;
+      left: 45%;
+      width: 100%;
+      transform: translateX(-50%);
+      right: 10%;
+      bottom: 0;
+      background-image: url(../img/main-bg.png);
+      background-size: cover;
+      background-position: center;
+      filter: blur(5rem);
+      will-change: transform;
+   }
+   &__pig {
+      position: absolute;
+      top: -5%;
+      left: 11%;
+      background-image: url(../img/main-pig.png);
+      width: 88.2rem;
+      height: 88.2rem;
+      background-size: contain;
+      background-position: center;
+      transform: rotate(160deg);
+      /* transform: translate(-70%, -10%) rotate(213deg); */
+   }
+   &__coins {
+      position: absolute;
+      top: -12%;
+      left: 15%;
+      width: 129.3rem;
+      height: 99.6rem;
+
+      i {
+         position: absolute;
+         background-size: contain;
+         &:nth-child(1) {
+            background-image: url(../img/coin-1.png);
+            width: 15.1rem;
+            height: 14.3rem;
+            top: 56.7rem;
+            left: 9.8rem;
+            /* transform: rotate(0deg); */
+            transform: rotate(-66deg);
+         }
+         &:nth-child(2) {
+            background-image: url(../img/coin-2.png);
+            width: 4.5rem;
+            height: 5rem;
+            top: 21.4rem;
+            left: 18.3rem;
+            transform: rotate(115deg);
+         }
+         &:nth-child(3) {
+            background-image: url(../img/coin-3.png);
+            width: 4.5rem;
+            height: 5rem;
+            top: 66.4rem;
+            left: 65.6rem;
+            transform: rotate(115deg);
+         }
+         &:nth-child(4) {
+            background-image: url(../img/coin-4.png);
+            width: 14.1rem;
+            height: 15.8rem;
+            top: 79.4rem;
+            left: 73.7rem;
+            /* transform: rotate(0deg); */
+            transform: rotate(59deg);
+         }
+         &:nth-child(5) {
+            background-image: url(../img/coin-5.png);
+            width: 8.4rem;
+            height: 4.8rem;
+            left: 0;
+            top: 41.8rem;
+            transform: rotate(79deg);
+         }
+         &:nth-child(6) {
+            background-image: url(../img/coin-6.png);
+            width: 19rem;
+            height: 10.9rem;
+            left: 110.3rem;
+            top: 43.9rem;
+            transform: rotate(0deg);
+         }
+         &:nth-child(7) {
+            background-image: url(../img/coin-7.png);
+            width: 8.5rem;
+            height: 17.8rem;
+            top: 16.2rem;
+            left: 78.8rem;
+            /* transform: rotate(0deg); */
+            transform: rotate(-58deg);
+         }
+         &:nth-child(8) {
+            background-image: url(../img/coin-8.png);
+            width: 22.4rem;
+            height: 16.3rem;
+            left: 40rem;
+            top: 1.5rem;
+            transform: rotate(-34deg);
+         }
+      }
+   }
+}
+
+.main-bg {
+   background-image: url(../img/main-bg-2.jpg);
+   background-size: cover;
+   background-position: 50% 50%;
+   z-index: -1;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   opacity: 0;
+}

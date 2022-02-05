@@ -1,3 +1,16 @@
+.logo {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 15.6rem;
+   height: 15.6rem;
+   background-image: url(../img/logo.png);
+   background-size: contain;
+   z-index: 5;
+   mix-blend-mode: lighten;
+   left: 1.5rem;
+   top: 1.5rem;
+}
 .main-wrapper-inner {
    overflow: hidden;
 }
@@ -5,11 +18,11 @@
    position: relative;
    z-index: 3;
    .container {
-      height: 100vh;
+      height: 150vh;
       position: relative;
    }
    &__ills {
-      position: absolute;
+      position: fixed;
       top: 62%;
       left: 50%;
       width: 129.3rem;
@@ -21,14 +34,14 @@
       top: -60%;
       left: 45%;
       width: 100%;
-      transform: translateX(-50%);
+      transform: translate3d(-50%, 0, 0);
       right: 10%;
       bottom: 0;
       background-image: url(../img/main-bg.png);
       background-size: cover;
       background-position: center;
       filter: blur(5rem);
-      will-change: transform;
+      will-change: transform, opacity;
    }
    &__pig {
       position: absolute;
@@ -40,7 +53,51 @@
       background-size: contain;
       background-position: center;
       transform: rotate(160deg);
+      transform-origin: center;
       /* transform: translate(-70%, -10%) rotate(213deg); */
+   }
+   &__text {
+      position: absolute;
+      top: 22%;
+      left: 51.5%;
+      z-index: 3;
+      font-size: 6.1rem;
+      @apply font-therd;
+      text-transform: uppercase;
+      line-height: 1;
+      font-weight: bold;
+      transform: rotate(-15deg);
+      overflow: hidden;
+      padding: 0 1rem 0 5rem;
+      span {
+         display: block;
+         letter-spacing: -0.072em;
+         position: relative;
+      }
+      img {
+         width: 5rem;
+         height: 5rem;
+         border-radius: 50%;
+         display: inline-block;
+         vertical-align: middle;
+         margin-left: 0.4rem;
+         margin-top: -0.7rem;
+      }
+      &-message {
+         span:first-child::before {
+            content: "“";
+            position: absolute;
+            top: 0;
+            left: -1.5rem;
+            transform: translateX(-100%);
+         }
+      }
+      &-author {
+         font-weight: 300;
+         font-size: 2.3rem;
+         letter-spacing: 0.02em;
+         margin-top: 1em;
+      }
    }
    &__coins {
       position: absolute;
@@ -125,7 +182,8 @@
 
 .main-bg {
    background-image: url(../img/main-bg-2.jpg);
-   background-size: cover;
+   background-size: auto 100%;
+   background-repeat: repeat;
    background-position: 50% 50%;
    z-index: -1;
    position: fixed;

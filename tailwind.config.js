@@ -43,7 +43,7 @@ module.exports = {
          // line: "#D2D2D2",
          primary: {
             // 100: "#bdb4f2",
-            DEFAULT: "#716D56",
+            DEFAULT: "#D467D9",
             // light: "#F2DFD8",
          },
          secondary: {
@@ -66,7 +66,7 @@ module.exports = {
       },
 
       fontFamily: {
-         primary: '"Proxima Nova", sans-serif',
+         primary: '"Urbanist", sans-serif',
          secondary: '"Mohave", sans-serif',
          therd: '"Mohave Italic", sans-serif',
       },
@@ -111,7 +111,7 @@ module.exports = {
          "mob-2xl": ["3.2rem", 54 / 44],
          xl: ["2.4rem", 36 / 24],
          lg: ["2.1rem", 30 / 18],
-         base: ["1.8rem", 22 / 18],
+         base: ["1.8rem", 26 / 18],
          // "mob-lg": ["2rem", 28 / 20],
          sm: ["1.6rem", 24 / 16],
          // sm: ["1.4rem", 21 / 14],

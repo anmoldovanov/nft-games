@@ -24,6 +24,7 @@ import { FocusTrap } from "./helpers/focusTrap";
 // awaiting only for Open / Close states
 // check if hook is async
 // function for Animations
+// group open / close event
 
 const MODAL = "modal";
 const CONTENT = "content";

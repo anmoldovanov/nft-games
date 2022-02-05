@@ -12,10 +12,11 @@
       transform: scale(2);
       transform-origin: center top;
       z-index: -1;
+      will-change: transform;
    }
    .container {
       z-index: 3;
-      height: 300vh;
+      height: 400vh;
       position: relative;
       text-align: center;
       display: flex;
@@ -25,8 +26,8 @@
    &__texts {
       position: fixed;
       top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      left: 0;
+      transform: translateY(-50%);
       width: 100%;
       text-align: center;
    }

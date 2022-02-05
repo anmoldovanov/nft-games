@@ -138,9 +138,8 @@ mark {
    }
    p {
       img {
-         margin-top: 4rem;
-         margin-bottom: 4rem;
-         @apply rounded-sm;
+         margin-top: 1.5rem;
+         margin-bottom: 1.5rem;
          display: inline-block;
          &.aligncenter {
             margin-left: auto;

@@ -1,0 +1,82 @@
+.pigs-screen {
+   height: 150vw;
+   position: relative;
+   &__content {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /* width: max-content; */
+      width: 100%;
+      gap: 5rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   &__ill {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(75%, -50%);
+      width: 75.4rem;
+      height: 67.7rem;
+      background-image: url(../img/pig-broke.png);
+      background-size: contain;
+      transform-origin: left bottom;
+   }
+}
+.pigs-list {
+   display: flex;
+   &__item {
+      width: 26rem;
+      position: relative;
+      z-index: 1;
+   }
+   &__number {
+      font-size: 21.5rem;
+      @apply font-therd;
+      font-weight: bold;
+      -webkit-text-stroke: 1px #44474e;
+      color: transparent;
+      position: absolute;
+      z-index: -1;
+      top: -110%;
+      left: 0;
+      right: 0;
+      text-align: center;
+      transition: 0.4s;
+   }
+   &__title {
+      @apply font-secondary;
+      font-weight: bold;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+      line-height: 1;
+      font-size: 3.5rem;
+      margin-bottom: 2rem;
+      display: block;
+   }
+   &__more {
+      text-transform: uppercase;
+      -webkit-text-stroke: 1px #a72fac;
+      color: transparent;
+      filter: drop-shadow(0 0.1rem 1.1rem #a72fac);
+      font-weight: bold;
+      @apply font-therd;
+      font-size: 2.4rem;
+      line-height: 0.95;
+      display: block;
+   }
+   &__button {
+      width: 100%;
+      transition: 0.4s transform;
+   }
+   &__item:hover &__button {
+      transform: translateY(20%);
+   }
+   &__item:hover &__number {
+      -webkit-text-stroke: 1px #d467d9;
+      transform: translateY(10%);
+   }
+}

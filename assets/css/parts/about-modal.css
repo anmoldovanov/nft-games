@@ -1,0 +1,61 @@
+.about-modal {
+   --state-duration: 0;
+   transition: 0.35s;
+   background-color: rgba(#000000, 0.78);
+   &.v-enter-from,
+   &.v-leave-to {
+      opacity: 0;
+   }
+}
+.about-modal-content {
+   --state-duration: 0.15s;
+   transition: 0.35s cubic-bezier(0.45, 0, 0.55, 1);
+   &.v-enter-from,
+   &.v-leave-to {
+      opacity: 0;
+   }
+   &.v-enter-from {
+      transform: translateY(5rem);
+   }
+   &.v-leave-to {
+      transform: translateY(-5rem);
+   }
+}
+
+.about-modal-content {
+   background-color: #141a23;
+   width: 98rem;
+   padding: 5.5rem 9rem;
+   color: #ffffff;
+   text-align: center;
+   .modal-close {
+      position: absolute;
+      top: 4rem;
+      right: 4rem;
+   }
+}
+
+.about-modal-title {
+   font-size: 3.6rem;
+   @apply font-therd;
+   font-weight: bold;
+   text-transform: uppercase;
+   margin-bottom: 4rem;
+}
+.about-modal-subtitle {
+   @apply text-primary font-secondary;
+   font-weight: bold;
+   font-size: 2.7rem;
+   text-transform: uppercase;
+   letter-spacing: -0.05em;
+   margin-bottom: 1rem;
+}
+.about-modal-desc {
+   font-size: 1.8rem;
+}
+
+.about-modal-inner {
+   max-width: 57rem;
+   margin-left: auto;
+   margin-right: auto;
+}

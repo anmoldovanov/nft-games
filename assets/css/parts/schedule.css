@@ -1,0 +1,28 @@
+.schedule {
+   /* height: 150vw; */
+   text-align: center;
+   &__content {
+      position: fixed;
+      left: 50%;
+      top: 20vh;
+      /* bottom: 0; */
+      transform: translate(-50%, 0);
+      /* width: max-content; */
+      width: 100%;
+      gap: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 75rem;
+      gap: 10rem;
+   }
+   &__title {
+      font-size: 3.6rem;
+      @apply font-therd;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1;
+      letter-spacing: -0.05em;
+   }
+}

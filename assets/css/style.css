@@ -46,5 +46,6 @@
 
 @import "./parts/about-modal.css";
 @import "./parts/how-it-works.css";
+@import "./parts/schedule.css";
 
 @import "tailwindcss/utilities";

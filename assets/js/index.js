@@ -89,6 +89,12 @@ gsap
    .fromTo(".how-it-works__content", { x: "100vw" }, { x: "0vw" }, 0)
    .fromTo(".pigs-screen__ill", { scale: 1 }, { scale: 0.7 }, 0);
 
+gsap
+   .timeline({ scrollTrigger: { markers: false, trigger: ".schedule", start: "top center", end: "bottom bottom", scrub: 0.75 } })
+   .fromTo(".how-it-works__content", { x: "0vw" }, { x: "-100vw" }, 0)
+   .fromTo(".pigs-screen__content", { x: "-100vw" }, { x: "-200vw" }, 0)
+   .fromTo(".schedule__content", { x: "100vw" }, { x: "0vw" }, 0);
+
 // .fromTo(".stats-screen__subtitle-2", { scale: 1.2, y: "65vh" }, { scale: 1, y: "0" }, 0);
 
 // .to(".main-screen__bg", { y: "20%", autoAlpha: 0 }, 0)

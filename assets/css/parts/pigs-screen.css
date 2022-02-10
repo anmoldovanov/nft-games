@@ -1,13 +1,28 @@
 .pigs-screen {
-   height: 150vw;
+   /* width: 100vw; */
    position: relative;
+   flex-shrink: 0;
+   height: 100%;
+   .btn-arrow {
+      position: absolute;
+      top: 50%;
+      right: 15rem;
+      transform: translateY(-50%);
+   }
+   .container {
+      height: 100%;
+   }
    &__content {
-      position: fixed;
+      height: 100%;
+      /* position: fixed;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
-      /* width: max-content; */
+      transform: translate(-50%, -50%); */
       width: 100%;
+      width: max-content;
+      margin-left: auto;
+      margin-right: auto;
+      padding-right: 17%;
       gap: 5rem;
       text-align: center;
       display: flex;
@@ -18,7 +33,7 @@
       position: absolute;
       top: 50%;
       right: 0;
-      transform: translate(75%, -50%);
+      transform: translate(65%, -50%);
       width: 75.4rem;
       height: 67.7rem;
       background-image: url(../img/pig-broke.png);
@@ -32,6 +47,27 @@
       width: 26rem;
       position: relative;
       z-index: 1;
+   }
+   &__ill {
+      width: 20.6rem;
+      height: 20.6rem;
+      background-size: contain;
+      display: block;
+      position: absolute;
+      top: -20rem;
+      left: calc(50% - 20.6rem / 2);
+   }
+   &__item:nth-child(1) &__ill {
+      background-image: url(../img/pig-1.png);
+      transform: rotate(69deg);
+   }
+   &__item:nth-child(2) &__ill {
+      background-image: url(../img/pig-2.png);
+      transform: rotate(-47deg);
+   }
+   &__item:nth-child(3) &__ill {
+      background-image: url(../img/pig-3.png);
+      transform: rotate(-22deg);
    }
    &__number {
       font-size: 21.5rem;
@@ -59,24 +95,32 @@
    }
    &__more {
       text-transform: uppercase;
-      -webkit-text-stroke: 1px #a72fac;
+      -webkit-text-stroke: 1.5px #a72fac;
       color: transparent;
-      filter: drop-shadow(0 0.1rem 1.1rem #a72fac);
+      filter: drop-shadow(0 0.1rem 0.5rem #a72fac);
       font-weight: bold;
       @apply font-therd;
       font-size: 2.4rem;
-      line-height: 0.95;
+      line-height: 0.9;
       display: block;
+      svg {
+         width: 0.8rem;
+         height: 1.5rem;
+         position: absolute;
+         bottom: -2.5rem;
+         left: 50%;
+         transform: translateX(-50%);
+      }
    }
    &__button {
       width: 100%;
       transition: 0.4s transform;
    }
    &__item:hover &__button {
-      transform: translateY(20%);
+      transform: translateY(10%);
    }
    &__item:hover &__number {
       -webkit-text-stroke: 1px #d467d9;
-      transform: translateY(10%);
+      transform: translateY(5%);
    }
 }

@@ -415,7 +415,7 @@ class Tablist extends Base {
       if (!this.opts.keyboardNavigation) return;
       let active = this.selected[0]?.index ?? this.firstActiveTabIndex;
       this.tabs.forEach(({ tab }, i) => {
-         tab.setAttribute(tab, TABINDEX, i == active ? 0 : -1);
+         tab.setAttribute(TABINDEX, i == active ? 0 : -1);
       });
    }
    get selected() {

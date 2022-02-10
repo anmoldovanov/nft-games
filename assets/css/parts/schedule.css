@@ -1,21 +1,29 @@
+.schedule-placeholder {
+   width: 100%;
+}
 .schedule {
-   /* height: 150vw; */
+   width: 100vw;
    text-align: center;
+   flex-shrink: 0;
    &__content {
-      position: fixed;
+      /* position: fixed;
       left: 50%;
       top: 20vh;
-      /* bottom: 0; */
-      transform: translate(-50%, 0);
+      transform: translate(-50%, 0); */
       /* width: max-content; */
+
       width: 100%;
       gap: 5rem;
+      margin-left: auto;
+      margin-right: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       max-width: 75rem;
       gap: 10rem;
+      padding-top: 29vh;
+      padding-bottom: 29vh;
    }
    &__title {
       font-size: 3.6rem;
@@ -24,5 +32,97 @@
       text-transform: uppercase;
       line-height: 1;
       letter-spacing: -0.05em;
+   }
+}
+
+.schedule-pigs {
+   position: absolute;
+   top: 50%;
+   left: -15rem;
+   transform: translateY(-50%);
+   width: 100%;
+   height: 29rem;
+   z-index: 2;
+   i {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 29rem;
+      height: 29rem;
+      background-size: contain;
+      background-position: center;
+      &:nth-child(1) {
+         background-image: url(../img/pig-day-1.png);
+         z-index: 7;
+      }
+      &:nth-child(2) {
+         background-image: url(../img/pig-day-2.png);
+         z-index: 6;
+      }
+      &:nth-child(3) {
+         background-image: url(../img/pig-day-3.png);
+         z-index: 5;
+      }
+      &:nth-child(4) {
+         background-image: url(../img/pig-day-4.png);
+         z-index: 4;
+      }
+      &:nth-child(5) {
+         background-image: url(../img/pig-day-5.png);
+         z-index: 3;
+      }
+      &:nth-child(6) {
+         background-image: url(../img/pig-day-6.png);
+         z-index: 2;
+      }
+      &:nth-child(7) {
+         background-image: url(../img/pig-day-7.png);
+         z-index: 1;
+      }
+   }
+}
+
+.schedule-table {
+   width: 98rem;
+   &__row {
+      display: flex;
+      gap: 5rem;
+      justify-content: center;
+      text-align: left;
+      min-height: 8.2rem;
+      padding: 2rem 0;
+      &:nth-child(odd) {
+         background-color: rgba(#d467d9, 0.11);
+      }
+   }
+   &__cell {
+      width: 10rem;
+      text-transform: uppercase;
+      &:nth-child(1) {
+         @apply font-therd text-primary;
+         font-weight: bold;
+         font-size: 2.7rem;
+         letter-spacing: -0.05em;
+         width: 5rem;
+      }
+      &:nth-child(2) {
+         @apply font-therd text-gray;
+         font-weight: 300;
+         font-size: 2.7rem;
+         letter-spacing: -0.05em;
+         text-align: right;
+      }
+      &:nth-child(3) {
+         @apply font-secondary text-white;
+         font-weight: bold;
+         font-size: 2.7rem;
+         letter-spacing: -0.05em;
+      }
+      &:nth-child(4) {
+         @apply font-secondary text-gray;
+         font-weight: bold;
+         font-size: 2.7rem;
+         letter-spacing: -0.05em;
+      }
    }
 }

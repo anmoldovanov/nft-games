@@ -29,7 +29,7 @@ let posthtmlEach = require("posthtml-each");
 let env = process.env.NODE_ENV;
 
 const srcPath = "assets";
-const distPath = "public";
+const distPath = "dist";
 const paths = {
    src: {
       tailwind: "tailwind.config.js",

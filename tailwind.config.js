@@ -57,7 +57,7 @@ module.exports = {
             DEFAULT: "#529326",
          },
          gray: {
-            DEFAULT: "#8C8C8C",
+            DEFAULT: "#979797",
          },
          yellow: {
             DEFAULT: "#F9DE6B",

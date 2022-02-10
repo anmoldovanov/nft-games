@@ -2,8 +2,8 @@
    font-size: 2.7vw;
    @media screen and (min-width: 375px) {
       font-size: 62.5%;
+      /* font-size: 0.67vw; */
    }
-   font-size: 62.5%;
 
    font-family: theme("fontFamily.primary");
    --transition-default: 0.15s;

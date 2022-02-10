@@ -1,7 +1,46 @@
+.btn-arrow {
+   @apply font-therd;
+   text-align: center;
+   font-size: 4.2rem;
+   font-weight: bold;
+   text-transform: uppercase;
+   letter-spacing: -0;
+   color: transparent;
+   -webkit-text-stroke: 1px #d467d9;
+   filter: drop-shadow(0 0.1rem 1.1rem #d467d9);
+   position: relative;
+   padding-bottom: 0.5rem;
+   transition: none;
+   svg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 18.7rem;
+      height: 1.2rem;
+   }
+}
+
+.hor-screens {
+   display: flex;
+   flex-wrap: nowrap;
+   height: 100vh;
+   position: relative;
+   z-index: 3;
+   /* height: 100vw; */
+}
 .under-stats-screen {
    /* margin-top: 50vh; */
+   width: 100vw;
+   height: 100%;
+   flex-shrink: 0;
+   .btn-arrow {
+      position: absolute;
+      top: 50%;
+      right: 25rem;
+      transform: translateY(-50%);
+   }
    .container {
-      height: 200vh;
+      /* height: 200vh; */
       position: relative;
    }
    &__pig {

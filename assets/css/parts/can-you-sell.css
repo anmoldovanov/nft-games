@@ -1,0 +1,3 @@
+.can-you-sell {
+   margin-top: calc(var(--schedule-height) - 100vh);
+}

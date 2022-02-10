@@ -1,20 +1,36 @@
 .how-it-works {
    position: relative;
-   height: 150vw;
+   width: 100vw;
+   /* height: 150vw; */
+   flex-shrink: 0;
+   height: 100%;
+   .btn-arrow {
+      position: absolute;
+      top: 50%;
+      right: 10rem;
+      transform: translateY(-50%);
+   }
+   .container {
+      height: 100%;
+   }
    &__content {
-      position: fixed;
+      /* position: fixed;
       left: 50%;
       top: 0;
       bottom: 0;
-      transform: translate(-50%, 0);
+      transform: translate(-50%, 0); */
       /* width: max-content; */
+      height: 100%;
       width: 100%;
+      margin-left: auto;
+      margin-right: auto;
       gap: 5rem;
       text-align: left;
       display: flex;
       align-items: center;
       justify-content: center;
       max-width: 75rem;
+      position: relative;
       gap: 10rem;
    }
    &__photo {

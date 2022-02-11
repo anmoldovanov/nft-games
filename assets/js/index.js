@@ -98,11 +98,39 @@ gsap
    .timeline({ scrollTrigger: { markers: false, trigger: ".pigs-screen", containerAnimation: scrollTween, start: "left right", end: "right right", scrub: 0 } })
    .fromTo(".stats-screen__bg", { x: "0%" }, { x: "-100%", ease: "none" }, 0)
    .fromTo(".main-bg", { backgroundPositionX: "0%" }, { backgroundPositionX: "-100%", ease: "none" }, 0)
-   .fromTo(".stats-screen__texts > *", { x: "0%" }, { x: "-120%", ease: "none" }, 0);
+   .fromTo(".stats-screen__texts > *", { x: "0%" }, { x: "-120%", ease: "none" }, 0)
+   .fromTo(".pigs-list__item:nth-child(1) .pigs-list__ill", { rotate: 0 }, { rotate: 69, ease: "none" }, 0)
+   .fromTo(".pigs-list__item:nth-child(2) .pigs-list__ill", { rotate: -115 }, { rotate: -47, ease: "none" }, 0)
+   .fromTo(".pigs-list__item:nth-child(3) .pigs-list__ill", { rotate: -82 }, { rotate: -22, ease: "none" }, 0)
+
+   .fromTo(".under-stats-screen__coins i:nth-child(4)", { rotate: 57 }, { rotate: 21, ease: "none" }, 0)
+   .fromTo(".under-stats-screen__coins i:nth-child(6)", { rotate: -36, scale: 1, x: 0, y: 0 }, { rotate: -106, scale: 0.55, x: "-30rem", y: "-10rem", ease: "none" }, 0)
+   .fromTo(".under-stats-screen__coins i:nth-child(7)", { rotate: -34, scale: 1, x: 0 }, { rotate: 44, scale: 0.71, x: "-20rem", ease: "none" }, 0)
+   .fromTo(".under-stats-screen__coins i:nth-child(8)", { rotate: -34 }, { rotate: -3, ease: "none" }, 0)
+   .fromTo(".under-stats-screen__coins i:nth-child(3)", { x: 0, y: 0 }, { x: "-4rem", y: "-7rem", ease: "none" }, 0)
+
+   .fromTo(".pigs-screen__coins", { x: 0, y: 0 }, { x: "-18%", y: "0", ease: "none" }, 0)
+   .fromTo(".pigs-screen__coins i:nth-child(1)", { y: 0, rotate: -107 }, { y: "3rem", rotate: -144, ease: "none" }, 0)
+   .fromTo(".pigs-screen__coins i:nth-child(2)", { y: 0, rotate: -53 }, { y: "22rem", rotate: -94, ease: "none" }, 0)
+   .fromTo(".pigs-screen__coins i:nth-child(3)", { y: 0, rotate: 44 }, { y: "-15rem", rotate: 84, ease: "none" }, 0)
+   .fromTo(".pigs-screen__coins i:nth-child(5)", { y: 0, rotate: 62 }, { y: "15rem", rotate: 14, ease: "none" }, 0)
+   .fromTo(".pigs-screen__coins i:nth-child(7)", { rotate: 44 }, { rotate: 84, ease: "none" }, 0);
 
 gsap
    .timeline({ scrollTrigger: { markers: false, trigger: ".how-it-works", containerAnimation: scrollTween, start: "left right", end: "right right", scrub: 0 } })
-   .fromTo(".pigs-screen__ill", { scale: 1 }, { scale: 0.7, ease: "none" }, 0);
+   .fromTo(".pigs-screen__ill", { scale: 1 }, { scale: 0.7, ease: "none" }, 0)
+   .fromTo(".pigs-screen__coins", { x: "-18%", y: 0 }, { x: "-40%", y: "0", ease: "none" }, 0)
+   .fromTo(".pigs-list__item:nth-child(1) .pigs-list__ill", { rotate: 69 }, { rotate: 99, ease: "none" }, 0)
+   .fromTo(".pigs-list__item:nth-child(2) .pigs-list__ill", { rotate: -47 }, { rotate: -17, ease: "none" }, 0)
+   .fromTo(".pigs-list__item:nth-child(3) .pigs-list__ill", { rotate: -22 }, { rotate: 12, ease: "none" }, 0)
+
+   .fromTo(".pigs-screen__coins i:nth-child(1)", { y: "3rem", rotate: -144 }, { y: "4rem", rotate: -187, ease: "none" }, 0)
+   .fromTo(".pigs-screen__coins i:nth-child(2)", { y: "22rem", rotate: -94 }, { y: "17rem", rotate: -133, ease: "none" }, 0)
+   .fromTo(".pigs-screen__coins i:nth-child(3)", { y: "-15rem", rotate: 84 }, { y: "-16rem", rotate: 124, ease: "none" }, 0)
+   .fromTo(".pigs-screen__coins i:nth-child(5)", { y: "15rem", rotate: 14 }, { y: "18rem", rotate: 82, ease: "none" }, 0)
+   .fromTo(".pigs-screen__coins i:nth-child(7)", { rotate: 84 }, { rotate: 124, ease: "none" }, 0)
+   .fromTo(".how-it-works__photo img", { scale: 0.2, x: "-50vw", y: "-50vh", autoAlpha: 0 }, { scale: 1, x: 0, y: 0, autoAlpha: 1, ease: "none" }, 0)
+   .fromTo(".how-it-works__coins", { scale: 0.3, x: "-40vw", y: "-40vh", autoAlpha: 0 }, { scale: 1, x: 0, y: 0, autoAlpha: 1, ease: "none" }, 0);
 
 let windowWidth = window.innerWidth;
 gsap
@@ -117,7 +145,7 @@ gsap
          opacity: (i) => (i == 0 ? 1 : 0),
       },
       {
-         scale: 0.25,
+         scale: 0.4,
          ease: "none",
          opacity: 1,
          x: (i) => windowWidth / 2 - 980 / 2 + i * 130 - 72 / 2 + "px",

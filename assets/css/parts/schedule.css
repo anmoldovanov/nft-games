@@ -22,7 +22,7 @@
       justify-content: center;
       max-width: 75rem;
       gap: 10rem;
-      padding-top: 29vh;
+      padding-top: 21.3vh;
       padding-bottom: 29vh;
    }
    &__title {
@@ -84,7 +84,7 @@
 
 .schedule-table {
    width: 98rem;
-   margin-top: 3rem;
+   margin-top: 14rem;
    &__header {
       display: flex;
       gap: 5rem;
@@ -103,6 +103,9 @@
          }
          &:nth-child(3) {
             text-align: center;
+         }
+         &:nth-child(4) {
+            color: #979797;
          }
       }
    }

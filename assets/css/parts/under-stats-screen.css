@@ -93,8 +93,8 @@
             background-image: url(../img/coin_0015_Layer-4.png);
             width: 4rem;
             height: 4.5rem;
-            top: 84.1rem;
-            left: 55.1rem;
+            top: 55.1rem;
+            left: 84.1rem;
             transform: rotate(66deg);
          }
          &:nth-child(4) {

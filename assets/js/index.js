@@ -85,7 +85,7 @@ let scrollTween = gsap.to(sections, {
 });
 
 gsap
-   .timeline({ scrollTrigger: { markers: false, trigger: ".under-stats-screen", start: "top center", end: "bottom bottom", scrub: 0 } })
+   .timeline({ scrollTrigger: { markers: false, trigger: ".under-stats-screen", start: "top center", end: "bottom bottom", scrub: 0, pinSpacing: true } })
    // .fromTo(".stats-screen__bg", { scale: 1.4 }, { scale: 1, ease: "none" }, 0)
    .fromTo(".stats-screen__texts", { scale: 1, y: "0" }, { scale: 0.9, y: "-65%", ease: "none" }, 0)
    .fromTo(".main-bg", { backgroundPositionY: "50%" }, { backgroundPositionY: "70%" }, 0)
@@ -104,10 +104,11 @@ gsap
    .timeline({ scrollTrigger: { markers: false, trigger: ".how-it-works", containerAnimation: scrollTween, start: "left right", end: "right right", scrub: 0 } })
    .fromTo(".pigs-screen__ill", { scale: 1 }, { scale: 0.7, ease: "none" }, 0);
 
+let windowWidth = window.innerWidth;
 gsap
    .timeline({ scrollTrigger: { markers: false, trigger: ".schedule", containerAnimation: scrollTween, start: "left right", end: "right right", scrub: 0 } })
    .fromTo(".schedule__title, .schedule-table", { x: "-50vw", autoAlpha: 0 }, { x: "0vw", autoAlpha: 1, ease: "none" }, 0)
-   .fromTo(".schedule-pigs", { x: "-15rem" }, { x: "50%", ease: "none" }, 0)
+   .fromTo(".schedule-pigs", { x: "-15rem" }, { x: "0", ease: "none" }, 0)
    .fromTo(
       ".schedule-pigs i",
       {
@@ -119,7 +120,7 @@ gsap
          scale: 0.25,
          ease: "none",
          opacity: 1,
-         x: (i) => i * 13 + "rem",
+         x: (i) => windowWidth / 2 - 980 / 2 + i * 130 - 72 / 2 + "px",
       },
       0
    );

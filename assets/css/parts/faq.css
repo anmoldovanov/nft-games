@@ -11,11 +11,28 @@
       margin-bottom: 3.5rem;
    }
    &__content {
-      background-color: #141a23;
-      padding: 5rem 10rem 8.5rem;
       max-width: 78rem;
       margin-left: auto;
       margin-right: auto;
+   }
+   &__inner {
+      background-color: #141a23;
+      padding: 5rem 10rem 8.5rem;
+      position: relative;
+      &::before {
+         content: "";
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         width: 53.7rem;
+         height: 15.7rem;
+         background-image: url(../img/pig-footer.png);
+         background-size: contain;
+         position: absolute;
+         bottom: -15.7rem;
+         left: 50%;
+         transform: translateX(-50%);
+      }
    }
 }
 
@@ -60,5 +77,25 @@
       &:not(:last-child) {
          border-bottom: 1px solid #384c6a;
       }
+   }
+}
+
+.faq-message {
+   text-align: center;
+   margin-top: 19rem;
+   text-transform: uppercase;
+   @apply font-therd;
+   font-weight: bold;
+   &__title {
+      font-size: 2.7rem;
+      letter-spacing: -0.05em;
+      margin-bottom: -0.4rem;
+   }
+   &__btn {
+      -webkit-text-stroke: 1px #d467d9;
+      filter: drop-shadow(0 0.1rem 1rem #ff00cc) drop-shadow(0 0.1rem 0.5rem rgba(#ff00cc, 0.2));
+      text-transform: uppercase;
+      color: transparent;
+      font-size: 4.2rem;
    }
 }

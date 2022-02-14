@@ -124,10 +124,10 @@ gsap
    .fromTo(".pigs-list__item:nth-child(2) .pigs-list__ill", { rotate: -47 }, { rotate: -17, ease: "none" }, 0)
    .fromTo(".pigs-list__item:nth-child(3) .pigs-list__ill", { rotate: -22 }, { rotate: 12, ease: "none" }, 0)
 
-   .fromTo(".pigs-screen__coins i:nth-child(1)", { y: "3rem", rotate: -144 }, { y: "4rem", rotate: -187, ease: "none" }, 0)
-   .fromTo(".pigs-screen__coins i:nth-child(2)", { y: "22rem", rotate: -94 }, { y: "17rem", rotate: -133, ease: "none" }, 0)
-   .fromTo(".pigs-screen__coins i:nth-child(3)", { y: "-15rem", rotate: 84 }, { y: "-16rem", rotate: 124, ease: "none" }, 0)
-   .fromTo(".pigs-screen__coins i:nth-child(5)", { y: "15rem", rotate: 14 }, { y: "18rem", rotate: 82, ease: "none" }, 0)
+   .fromTo(".pigs-screen__coins i:nth-child(1)", { y: "3rem", rotate: -144 }, { y: "6rem", rotate: -187, ease: "none" }, 0)
+   .fromTo(".pigs-screen__coins i:nth-child(2)", { y: "22rem", rotate: -94 }, { y: "44rem", rotate: -133, ease: "none" }, 0)
+   .fromTo(".pigs-screen__coins i:nth-child(3)", { y: "-15rem", rotate: 84 }, { y: "-30rem", rotate: 124, ease: "none" }, 0)
+   .fromTo(".pigs-screen__coins i:nth-child(5)", { y: "15rem", rotate: 14 }, { y: "30rem", rotate: 82, ease: "none" }, 0)
    .fromTo(".pigs-screen__coins i:nth-child(7)", { rotate: 84 }, { rotate: 124, ease: "none" }, 0)
    .fromTo(".how-it-works__photo img", { scale: 0.2, x: "-50vw", y: "-50vh", autoAlpha: 0 }, { scale: 1, x: 0, y: 0, autoAlpha: 1, ease: "none" }, 0)
    .fromTo(".how-it-works__coins", { scale: 0.3, x: "-40vw", y: "-40vh", autoAlpha: 0 }, { scale: 1, x: 0, y: 0, autoAlpha: 1, ease: "none" }, 0);
@@ -152,6 +152,26 @@ gsap
       },
       0
    );
+
+gsap
+   .timeline({ scrollTrigger: { markers: true, trigger: ".can-you-sell", start: "top 50%", end: "150% bottom", scrub: 0.75 } })
+   .fromTo(".can-you-sell__ill-coins", { scale: 1 }, { scale: 2, autoAlpha: 1 }, 0);
+// .fromTo(".schedule-pigs", { x: "-15rem" }, { x: "0", ease: "none" }, 0)
+// .fromTo(
+//    ".schedule-pigs i",
+//    {
+//       scale: 1,
+//       x: 0,
+//       opacity: (i) => (i == 0 ? 1 : 0),
+//    },
+//    {
+//       scale: 0.4,
+//       ease: "none",
+//       opacity: 1,
+//       x: (i) => windowWidth / 2 - 980 / 2 + i * 130 - 72 / 2 + "px",
+//    },
+//    0
+// );
 
 // .fromTo(".pigs-screen__content", { x: "100vw" }, { x: "0vw" }, 0);
 

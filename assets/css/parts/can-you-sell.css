@@ -1,3 +1,114 @@
 .can-you-sell {
    margin-top: calc(var(--schedule-height) - 100vh);
+   &__ill {
+      position: relative;
+      width: 55rem;
+      height: 38.8rem;
+      margin-left: auto;
+      margin-right: auto;
+      &-main {
+         width: 100%;
+         height: 100%;
+         background-image: url(../img/can-we-sell.png);
+         background-size: contain;
+         background-position: center;
+      }
+      &-coins {
+         width: 28.5rem;
+         height: 14rem;
+         position: absolute;
+         top: 20%;
+         z-index: 2;
+         left: 50%;
+         transform: translateX(-50%) rotate(-7deg);
+         i {
+            position: absolute;
+            background-size: contain;
+            background-position: center;
+            &:nth-child(1) {
+               background-image: url(../img/coin_0015_Layer-4.png);
+               width: 3.1rem;
+               height: 3.5rem;
+               top: 5.8rem;
+               left: 4rem;
+               transform: rotate(160deg);
+            }
+            &:nth-child(2) {
+               background-image: url(../img/coin_0015_Layer-4.png);
+               width: 3.3rem;
+               height: 3.7rem;
+               left: 22.7rem;
+               top: 3.9rem;
+               transform: rotate(115deg);
+            }
+            &:nth-child(3) {
+               background-image: url(../img/coin_0015_Layer-4.png);
+               width: 3.5rem;
+               height: 3.9rem;
+               left: 8.1rem;
+               top: 2.8rem;
+               transform: rotate(124deg);
+            }
+            &:nth-child(4) {
+               background-image: url(../img/coin_0015_Layer-4.png);
+               width: 4rem;
+               height: 4.5rem;
+               left: 18.5rem;
+               top: 0;
+               transform: rotate(66deg);
+            }
+            &:nth-child(5) {
+               background-image: url(../img/coin_0007_Layer-12.png);
+               width: 3rem;
+               height: 6.2rem;
+               top: 7.7rem;
+               left: 25.5rem;
+               transform: rotate(-14deg);
+            }
+            &:nth-child(6) {
+               background-image: url(../img/coin_0000_Layer-19.png);
+               width: 4.7rem;
+               height: 3.4rem;
+               left: 0;
+               top: 9rem;
+               transform: rotate(101deg);
+            }
+         }
+      }
+   }
+   &__content {
+      width: 57.5rem;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+   }
+   &__title {
+      font-size: 3.6rem;
+      @apply font-therd;
+      font-weight: bold;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+      line-height: 1;
+      margin-bottom: 3rem;
+   }
+   &__subtitle {
+      font-size: 2.7rem;
+      line-height: calc(33 / 27);
+      @apply font-secondary;
+      font-weight: bold;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+   }
+   &__desc {
+      margin-bottom: 3rem;
+      @apply text-primary;
+   }
+   &__subdesc {
+      margin-bottom: 3rem;
+      max-width: 37.4rem;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+   }
 }

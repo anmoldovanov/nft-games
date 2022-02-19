@@ -49,5 +49,8 @@
 @import "./parts/schedule.css";
 @import "./parts/can-you-sell.css";
 @import "./parts/faq.css";
+@import "./parts/footer.css";
+@import "./parts/no-matter.css";
+@import "./parts/header.css";
 
 @import "tailwindcss/utilities";

@@ -1,5 +1,5 @@
 .faq {
-   padding: 15rem 0;
+   padding-bottom: 12rem;
    &__title {
       @apply font-therd;
       font-weight: bold;

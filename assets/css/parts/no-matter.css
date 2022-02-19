@@ -1,0 +1,93 @@
+.no-matter {
+   padding: 10rem 0;
+   position: relative;
+   &::before {
+      content: "";
+      background-image: url(../img/lights.png);
+      mask-image: linear-gradient(0deg, rgba(#000, 1), rgba(#000, 1) 80%, rgba(#000, 0));
+      position: absolute;
+      top: -70%;
+      left: 0;
+      right: 0;
+      padding-bottom: 100%;
+      background-size: contain;
+      background-position: top;
+      z-index: -1;
+      will-change: transform;
+      transform: rotate(180deg);
+   }
+   &__content {
+      display: flex;
+      justify-content: space-between;
+      max-width: 102rem;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      align-items: center;
+   }
+   &__title {
+      text-align: center;
+      font-size: 13rem;
+      @apply font-therd;
+      font-weight: bold;
+      -webkit-text-stroke: 1px #d467d9;
+      filter: drop-shadow(0 0.1rem 1rem #ff00cc) drop-shadow(0 0.1rem 0.5rem rgba(#ff00cc, 0.2));
+      text-transform: uppercase;
+      color: transparent;
+      line-height: 0.9;
+      margin-left: -5rem;
+   }
+   &__text {
+      width: 28rem;
+      flex-shrink: 0;
+   }
+   &__subtitle {
+      font-size: 2.7rem;
+      @apply font-therd;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: -0.05em;
+      margin-bottom: 2rem;
+   }
+   &__list {
+      color: #95b6e8;
+      @apply space-y-30;
+      li {
+         padding-left: 2.5rem;
+         position: relative;
+         &::before {
+            content: "";
+            position: absolute;
+            top: 1rem;
+            left: 0;
+            width: 0.7rem;
+            height: 0.7rem;
+            border-radius: 50%;
+            background-color: #95b6e8;
+         }
+      }
+   }
+   &__ill {
+      position: absolute;
+      top: 21rem;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 37.3rem;
+      height: 39.8rem;
+      &-pig {
+         width: 34.5rem;
+         height: 33.1rem;
+         object-fit: contain;
+         object-position: center;
+         position: absolute;
+         top: -8.5rem;
+      }
+      &-coin {
+         width: 34.3rem;
+         height: 31.1rem;
+         object-fit: contain;
+         object-position: center;
+         position: absolute;
+      }
+   }
+}

@@ -5,6 +5,8 @@
    width: 100vw;
    text-align: center;
    flex-shrink: 0;
+   position: relative;
+
    &__content {
       /* position: fixed;
       left: 50%;
@@ -51,6 +53,7 @@
       height: 29rem;
       background-size: contain;
       background-position: center;
+      transform: rotate(17deg);
       &:nth-child(1) {
          background-image: url(../img/pig-day-1.png);
          z-index: 7;

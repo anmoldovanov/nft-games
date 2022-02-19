@@ -4,7 +4,7 @@
    left: 0;
    width: 15.6rem;
    height: 15.6rem;
-   background-image: url(../img/logo.png);
+   background-image: url(../img/Neon_00053.webp);
    background-size: contain;
    z-index: 5;
    mix-blend-mode: lighten;
@@ -182,9 +182,9 @@
 
 .main-bg {
    background-image: url(../img/main-bg-2.jpg);
-   background-size: auto 100%;
-   background-repeat: repeat;
-   background-position: 50% 50%;
+   background-size: auto 200%;
+   background-repeat: repeat-x;
+   background-position: 0% 50%;
    z-index: -1;
    position: fixed;
    top: 0;
@@ -192,4 +192,16 @@
    right: 0;
    bottom: 0;
    opacity: 0;
+   &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 100vw;
+      top: 100%;
+      padding-bottom: 100%;
+      background-image: url(../img/sub-main-bg.jpg);
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+   }
 }

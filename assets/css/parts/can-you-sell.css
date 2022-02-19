@@ -1,5 +1,75 @@
 .can-you-sell {
    margin-top: calc(var(--schedule-height) - 100vh);
+   &__coins {
+      width: 112rem;
+      height: 50.9rem;
+      position: absolute;
+      top: -14rem;
+      left: 58%;
+      transform: translateX(-50%);
+      i {
+         background-size: contain;
+         position: absolute;
+         top: 0;
+         left: 0;
+         &:nth-child(1) {
+            background-image: url(../img/coin_0018_Layer-1.png);
+            transform: rotate(52deg);
+            width: 13.5rem;
+            height: 12.8rem;
+            top: 38rem;
+            left: 2rem;
+         }
+         &:nth-child(2) {
+            background-image: url(../img/coin_0015_Layer-4.png);
+            transform: rotate(268deg);
+            width: 9.6rem;
+            height: 10.8rem;
+            top: 4.7rem;
+            left: 8.5rem;
+         }
+         &:nth-child(3) {
+            background-image: url(../img/coin_0015_Layer-4.png);
+            transform: rotate(134deg);
+            width: 6rem;
+            height: 6.9rem;
+            left: 104rem;
+            top: 23.4rem;
+         }
+         &:nth-child(4) {
+            background-image: url(../img/coin_0015_Layer-4.png);
+            transform: rotate(113deg);
+            width: 4rem;
+            height: 4.5rem;
+            top: 0;
+            left: 92.7rem;
+         }
+         &:nth-child(5) {
+            background-image: url(../img/coin_0015_Layer-4.png);
+            transform: rotate(43deg);
+            width: 12.6rem;
+            height: 14.2rem;
+            left: 77.5rem;
+            top: 33.8rem;
+         }
+         &:nth-child(6) {
+            background-image: url(../img/coin_0011_Layer-8.png);
+            transform: rotate(135deg);
+            width: 7.5rem;
+            height: 4.3rem;
+            left: 0;
+            top: 20rem;
+         }
+         &:nth-child(7) {
+            background-image: url(../img/coin_0011_Layer-8.png);
+            transform: rotate(4deg);
+            width: 13.2rem;
+            height: 7.6rem;
+            left: 88.1rem;
+            top: 16.3rem;
+         }
+      }
+   }
    &__ill {
       position: relative;
       width: 55rem;
@@ -9,15 +79,34 @@
       &-main {
          width: 100%;
          height: 100%;
-         background-image: url(../img/can-we-sell.png);
-         background-size: contain;
-         background-position: center;
+         &-top {
+            background-image: url(../img/can-we-sell-pig.png);
+            background-size: contain;
+            background-position: center;
+            width: 27.4rem;
+            height: 26.7rem;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+         }
+         &-bottom {
+            background-image: url(../img/can-we-sell-coin.png);
+            background-size: contain;
+            background-position: center;
+            width: 55rem;
+            height: 15.3rem;
+            position: absolute;
+            top: 23rem;
+            left: 50%;
+            transform: translateX(-50%);
+         }
       }
       &-coins {
          width: 28.5rem;
          height: 14rem;
          position: absolute;
-         top: 20%;
+         top: 15%;
          z-index: 2;
          left: 50%;
          transform: translateX(-50%) rotate(-7deg);
@@ -81,6 +170,7 @@
       margin-left: auto;
       margin-right: auto;
       text-align: center;
+      position: relative;
    }
    &__title {
       font-size: 3.6rem;
